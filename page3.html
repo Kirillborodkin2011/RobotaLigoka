@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking</title>
+    <link rel="stylesheet" href="css/page3.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img class="logo" src="https://i.postimg.cc/XJxY2QCW/pngtree-cooking-school-masterclass-logo-template-of-chef-cooking-utensils-and-cutlery-picture-image.png" alt="Cooking School Logo">
+            <div class="menu">
+                <a href="page1.html" class="menu-elements">Самые активные <br>повара</a>
+                <a href="index.html" class="menu-elements">Главная</a>
+                <a href="page2.html" class="menu-elements">Наш магазин</a>
+            </div>
+        </header>
+
+        <center>
+            <div class="search">
+                <div class="icon"></div>
+                <div class="input"><input type="text" placeholder="Поиск" id="mySearch"></div>
+            </div>
+        </center>
+        
+        <div class="contanier-main" id="mainContainer">
+            <div class="syp">
+                <img src="https://i.postimg.cc/BZm4q9TF/noodle-soup-winter-meals-seeds.jpg" class="borc">
+                <p class="sy">Суп на курином бульоне</p>
+                <a href="page9.html" class="button" onclick="addToCart('Суп на курином бульоне', 50)">Подробнее</a>
+            </div>
+
+            <div class="syp">
+                <img src="https://i.postimg.cc/q7SWPWjy/depositphotos-87910268-stock-photo-homemade-beer-cheese-soup.webp" class="tykva">
+                <p class="tykv">Крем суп с тыквы</p>
+                <a href="page10.html" class="button" onclick="addToCart('Крем суп с тыквы', 60)">Подробнее</a>
+            </div>
+
+            <div class="syp">
+                <img src="https://i.postimg.cc/vZS19CRx/traditional-ukrainian-russian-vegetable-borsch-old-wooden-surface.jpg" class="borc">
+                <p class="bor">Борщ на свиных ребрах</p>
+                <a href="page11.html" class="button" onclick="addToCart('Борщ на свиных ребрах', 70)">Подробнее</a>
+            </div>
+        
+            <div class="syp">
+                <img src="https://i.postimg.cc/C5N5KQH1/image.png" class="doda">
+                <p class="bor">Добавить</p>
+                <a href="#" class="button" id="openModalBtn">Добавить</a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="text">
+                <p class="emailone">З питань співпраці/реклами:<br>info@cooking.com</p>
+                <p class="emailtwo">З питань організації майстер-класів:<br>os@cooking.com</p>
+            </div>
+            <p class="puplic">Публичная оферта</p>
+            <img src="https://i.postimg.cc/k5nXtp59/pngtree-cooking-school-masterclass-logo-template-of-chef-cooking-utensils-and-cutlery-picture-image.png" class="lofofooter" alt="Cooking School Footer Logo">
+        </footer>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Добавить новое блюдо</h2>
+            <form id="uploadForm">
+                <input type="file" id="imageInput" accept="image/*" required>
+                <input type="text" id="dishName" placeholder="Название блюда" required>
+                <button type="submit">Загрузить</button>
+            </form>
+            <div id="output"></div>
+        </div>
+    </div>
+    <script src="js/page3.js"></script>
+</body>
+</html>
+
+
+

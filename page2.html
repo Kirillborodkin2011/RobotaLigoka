@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking School</title>
+    <link rel="stylesheet" href="css/page2.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img class="logo" src="https://i.postimg.cc/XJxY2QCW/pngtree-cooking-school-masterclass-logo-template-of-chef-cooking-utensils-and-cutlery-picture-image.png" alt="Cooking School Logo">
+            <div class="menu">
+                <a href="page1.html" class="menu-elements">Самые активные <br>повара</a>
+                <a href="index.html" class="menu-elements">Главная</a>
+                <a href="#" class="menu-elements" onclick="toggleCart()">Корзина (<span id="cart-count">0</span>)</a>
+            </div>
+        </header>
+        <center>
+        <div class="search">
+            <div class="icon"></div>
+            <div class="input"><input type="text" placeholder="Поиск" id="mySearch"></div>
+        </div>
+</center> 
+
+<p class="magaz">Наш магазин<br>подставки для специй</p>
+
+<div class="two">
+    <div class="salat">
+        <img src="https://i.postimg.cc/KcW9v07H/064a02e14445443d2a7086dda525c1b4beabbd7e-original.jpg" class="salatimg">
+        <p class="achik">Подставка для специйдля ящика</p>
+        <button class="salatknopka" onclick="addToCart('Подставка для специй для ящика', 300)">300₴</button>
+    </div>
+ 
+    <div class="pizza">
+        <img src="https://i.postimg.cc/Vkq4g1xx/255410437.jpg" class="pizzaimg">
+        <p class="steny">Подставка для специйна стену</p>
+        <button class="salatknopka" onclick="addToCart('Подставка для специй на стену', 500)">500₴</button>
+    </div>
+
+    <div class="ruba">
+        <img src="https://i.postimg.cc/fb5C4CT5/b2862e07-d8f2-4dbf-9ecc-caf5dceb2023.webp" class="fishimg">
+        <p class="stol">Подставка для специй на стол</p>
+        <button class="salatknopka" onclick="addToCart('Подставка для специй на стол', 600)">600₴</button>
+    </div>
+</div>
+
+<p class="posyda">Посуда</p>
+
+<div class="two2">
+    <div class="nashu">
+        <img src="https://i.postimg.cc/jdNGVVVX/empty-frying-pan-cooking-placed-black-background.jpg" class="c">
+        <p class="posyda1">Сковородка <br>Tefal</p>
+        <button class="salatknopka" onclick="addToCart('Сковорода', 900)">900₴</button>
+    </div>
+
+    <div class="vupechka">
+        <img src="https://i.postimg.cc/ZKrD7r3s/professionalnaya-posuda-dlya-restoranov.jpg" class="bylochka">
+        <p class="posyda3">Набор кастрюль <br> Tefal</p>
+
+        <button class="salatknopka" onclick="addToCart('Набор кастрюль', 2400)">2400₴</button>
+    </div>
+
+    <div class="maso">
+        <img src="https://i.postimg.cc/59DZk4ry/nabor-iz-9-nozhej-iz-nerzhaveyushhej-stali-hendi-976770.png" class="mas">
+        <p class="posyda2">Набор ножей <br> Maxmark </p>
+
+        <button class="salatknopka" onclick="addToCart('Набор ножей', 1000)">1000₴</button>
+    </div>
+</div>
+
+<div id="cartModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="toggleCart()">&times;</span>
+        <h2>Ваша корзина</h2>
+        <ul id="cartItems"></ul>
+        <p>Итого: ₴<span id="totalPrice">0</span></p>
+        <button class="btn" onclick="clearCart()">Очистить корзину</button>
+    </div>
+</div>
+
+<footer>
+    <div class="text">
+        <p class="emailone">З питань співпраці/реклами:<br>info@cooking.com</p>
+        <p class="emailtwo">З питань організації майстер-класів:<br>os@cooking.com</p>
+    </div>
+    <p class="puplic">Публичная оферта</p>
+    <img src="https://i.postimg.cc/k5nXtp59/pngtree-cooking-school-masterclass-logo-template-of-chef-cooking-utensils-and-cutlery-picture-image.png" class="lofofooter" alt="Cooking School Footer Logo">
+</footer>
+</div>
+<script src="js/page2.js"></script>
+</body>
+</html>

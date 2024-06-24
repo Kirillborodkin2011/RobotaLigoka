@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking</title>
+    <link rel="stylesheet" href="css/page3.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://i.postimg.cc/XJxY2QCW/pngtree-cooking-school-masterclass-logo-template-of-chef-cooking-utensils-and-cutlery-picture-image.png" alt="Cooking School Logo">
+        <div class="menu">
+            <a href="page1.html" class="menu-elements">Самые активные <br>повара</a>
+            <a href="index.html" class="menu-elements">Главная</a>
+            <a href="page2.html" class="menu-elements">Наш магазин</a>
+    </header>
+
+    <center>
+        <div class="search">
+            <div class="icon"></div>
+            <div class="input"><input type="text" placeholder="Поиск" id="mySearch"></div>
+        </div>
+    </center> 
+    
+    <div class="contanier-main">     
+        <div class="syp">
+            <img src="https://i.postimg.cc/TPDrPTy3/italyanskiy-salat-2.jpg" class="tykva">
+            <p class="sy">Итальянский салат</p>
+            <a href="#" class="button">Подробнее</a>
+        </div>
+        <div class="syp">
+            <img src="https://i.postimg.cc/L5NPWXWN/Depositphotos-401843986-XL-1646053937-scaled-e1646054001205-1710710154-768x384.jpg" class="tykva">
+            <p class="tykv">Греческий салат</p>
+            <a href="#" class="button">Подробнее</a>
+        </div>
+        <div class="syp">
+            <img src="https://i.postimg.cc/HkJMST99/shutterstock-560099236-1577194102-e1577194126807-800x400.jpg" class="tykva">
+            <p class="tykv"> Салат с красной рыбой</p>
+            <a href="#" class="button">Подробнее</a>
+        </div>
+       
+        <div class="syp">   
+            <img src="https://i.postimg.cc/C5N5KQH1/image.png" class="tykva">
+            <p class="tykv"> Добавить</p>
+            <a href="#" class="button" id="openModalBtn">Подробнее</a>
+        </div>
+    </div>  
+
+    <footer>
+        <div class="text">
+            <p class="emailone">З питань співпраці/реклами:<br>info@cooking.com</p>
+            <p class="emailtwo">З питань організації майстер-класів:<br>os@cooking.com</p>
+        </div>
+        <p class="puplic">Публичная оферта</p>
+        <img src="https://i.postimg.cc/k5nXtp59/pngtree-cooking-school-masterclass-logo-template-of-chef-cooking-utensils-and-cutlery-picture-image.png" class="lofofooter">
+    </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="uploadForm">
+                <input type="file" id="imageInput" accept="image/*" required>
+                <input type="text" id="dishName" placeholder="Название блюда" required>
+                <button type="submit">Загрузить</button>
+            </form>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <script src="js/page6.js"></script>
+</body>
+</html>
